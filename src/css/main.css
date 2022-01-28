@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #424244;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+}
+
+header {
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+    height: 50vh;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul>li {
+    float: left;
+}
+
+nav ul>li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul>li a:hover {
+    cursor: pointer;
+    color: #7971ea;
+    text-decoration: underline;
+}
+
+/* .centered {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+ */
+
+
+.home {
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding-top: 7%;
+    text-shadow: 0 0 6px #000;
+
+}
+
+.home-info {
+    font-size: 2.9em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.home p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.categories-container {
+    margin: 0 auto;
+    display: grid;
+    width: 60vw;
+    grid-template-columns: repeat(3, minmax(60px, auto));
+    grid-template-rows: repeat(2, minmax(60px, auto));
+    gap: 20px;
+
+
+}
+
+.categories-container>.card {
+    background-color: #ecf4f6;
+}
+
+.card-info {
+    float: left;
+    margin-bottom: 2em;
+    padding: 0 20px;
+}
+
+.card-info>h5,
+.feat-card>h5 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.feat-card>h5 {
+    padding: 15px 0;
+}
+
+.card-info>p {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.card-info>.courses-count {
+    font-size: 20px;
+    font-weight: 600;
+    color: #7e75ff;
+    display: block;
+    margin-top: 1.2em;
+
+}
+
+.card-bg {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 10px;
+}
+
+.search-div {
+    background-color: #7e75ff;
+    border-radius: 5px;
+    width: 60vw;
+    margin: 0 auto;
+    padding: 40px 50px 40px;
+
+}
+
+.search-div>h1 {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+
+.search-form>input {
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    background-color: #ecf4f6;
+    color: #424244;
+    width: 35%;
+    font-size: 1em;
+
+}
+
+.search-form>button {
+    background-color: #7e75ff;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 1em;
+
+
+}
+
+.categs {
+    margin-bottom: 3em;
+}
+
+.categories {
+    list-style: none;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.categories>li {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #474747;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+
+.categories>li:hover {
+    border-bottom: 3px solid #7e75ff;
+    color: #7e75ff;
+
+
+}
+
+.active {
+    border-bottom: 3px solid #7e75ff;
+    color: #7e75ff;
+}
+
+.categories-info,
+.feat-courses {
+    text-align: center;
+    margin: 2em auto;
+    color: #424244;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+.categories-info>h3,
+.feat-courses>h3 {
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 25px;
+    color: #424244;
+
+}
+
+.categories-info>p {
+    font-size: 0.9em;
+}
+
+.featured-courses {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, auto));
+    grid-template-rows: repeat(2, minmax(60px, auto));
+    gap: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 3em;
+
+
+}
+
+.feat-card {
+    background-color: #ecf4f6;
+}
+
+.price-container>img {
+    height: 20vh;
+    width: 100%;
+}
+
+.feat-card,
+.card {
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 2em;
+    position: relative;
+}
+
+
+
+.feat-card:hover,
+.card:hover {
+    /*  background-color: #7e75ff; */
+    transition: all 0.3s ease-out;
+    /*  color: rgba(255, 255, 255, 0.897); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* 
+.card:hover .courses-count,
+.feat-card:hover .courses-count {
+    color: #fff;
+}
+ */
+.price-tag {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    background: #7e75ff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 2px;
+    padding: 0 10px;
+}
+
+
+.mentor {
+    border-top: 1px solid #ddd;
+    padding: 15px 25px 15px;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    line-height: 50px;
+    width: 100%;
+}
+
+.mentor-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.mentor>p {
+    padding-left: 10px;
+}
+
+.mentor>p>a {
+    text-decoration: none;
+}
+
+.sign-up {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.join-now {
+    display: flex;
+    margin-bottom: 2em;
+    height: 80vh;
+    color: #fff;
+
+}
+
+.join-form {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    background-color: #7e75ff;
+    padding: 50px;
+
+}
+
+.join-form>h3 {
+    font-size: 4vh;
+    letter-spacing: 2px;
+}
+
+.join-form>p {
+    font-size: 1.1em;
+    margin: 3% 0;
+}
+
+.sign-up>input {
+    font-size: 1em;
+    margin: 10px;
+    outline: none;
+    padding: 15px;
+    border: none;
+    background-color: #ecf4f6;
+}
+
+.sign-up>input:last-child {
+    background-color: #7e75ff;
+    color: #fff;
+    width: 35%;
+}
+
+.join-now>.join-img {
+    width: 50%;
+    filter: brightness(62.1%);
+}
+
+
+footer {
+    background-color: #ecf4f6;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer>p {
+    float: left;
+}
+
+footer>ul {
+    float: right;
+    list-style-type: none;
+}
+
+footer>ul>li {
+    display: inline-block;
+}
+
+/* 
+- Screen sizes based on this article for ideal web sizes
+https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design 
+*/
+@media screen and (max-width: 1360px) {
+    .featured-courses {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1186px) {
+    .categories-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .featured-courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .join-form>h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .sign-up {
+        padding: 20px;
+    }
+
+    .sign-up>input:last-child {
+        width: inherit;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .search-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-form>input,
+    .search-form>button {
+        width: 80%;
+        height: 30%;
+        padding: 3%;
+        margin: 10px auto;
+    }
+
+
+}
+
+@media screen and (max-width: 850px) {
+    .featured-courses {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home-info {
+        font-size: 1.2em;
+    }
+
+    .home p {
+        font-size: 0.8em;
+        line-height: 1.2;
+    }
+
+    .categories-container, .featured-courses {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+
+    .feat-card {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .join-form {
+        width: 80%;
+    }
+
+    .sign-up {
+        padding: 10px;
+        font-size: small;
+    }
+
+    .sign-up>input {
+        padding: 15px;
+    }
+
+    .sign-up>input:last-child {
+        padding: 20px;
+    }
+
+    .join-now>.join-img {
+        display: none;
+    }
+}
